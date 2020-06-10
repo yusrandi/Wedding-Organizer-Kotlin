@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Rahmat Kotlin</string>
+    <string name="create_account">Create Account</string>
+    <string name="cancel">batal</string>
+    <string name="submit">Pilih</string>
+    <string name="addtransaksi">Tambah Transaksi</string>
+    <string name="add">Tambah</string>
+</resources>

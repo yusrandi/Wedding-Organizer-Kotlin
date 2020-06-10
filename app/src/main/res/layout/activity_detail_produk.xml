@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5"
+    android:layout_height="match_parent"
+    tools:context=".DetailProdukActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:src="@mipmap/back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/layout_detail"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="15dp"
+                app:cardBackgroundColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <ImageView
+                            android:id="@+id/detail_produk_image"
+                            android:scaleType="fitXY"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/background_list"/>
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/detail_produk_etnama"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/nunito_bold"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:text="Nama Produknya disini"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:padding="6dp"
+                                android:gravity="center"
+                                android:background="@drawable/gradien"
+                                android:orientation="horizontal"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#fff"
+                                    android:text="5.5"/>
+
+                                <ImageView
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@mipmap/star"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:padding="16dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/detail_produk_etUser"
+                                android:fontFamily="@font/nunito_reguler"
+                                android:textSize="16sp"
+                                android:text="Alamat Produknya disini"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/detail_produk_paket"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_reguler"
+                                    android:text="Alamat Produknya disini shdjkshdjas sdjahdkas dhkasjdha"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+                                <TextView
+                                    android:id="@+id/detail_produk_etharga"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_reguler"
+                                    android:text="$98"
+                                    android:textColor="#000"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunito_reguler"
+                                    android:text="Deskripsi"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/detail_produk_etdesk"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/nunito_reguler"
+                                    android:text="Deskripsi shdgajhd shdgajhd sdhgajdha\nsdgahdjgas dhasgdjas dshjgda"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/nunito_reguler"
+                                    android:text="Alamat"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/detail_produk_etalamat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="16dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/nunito_reguler"
+                                    android:text="Deskripsi shdgajhd shdgajhd sdhgajdha\nsdgahdjgas dhasgdjas dshjgda"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lihat_keranjang"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradien"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Lihat Keranjang"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail_produk_add"
+                    android:textSize="36sp"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/gradien"
+                    android:text="+"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:layout_margin="16dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/loading_detail_produk"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorEnd" />
+    </RelativeLayout>
+
+
+</LinearLayout>

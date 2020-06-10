@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background"/>
+
+        <TextView
+            android:textSize="36sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#fff"
+            android:text="Find a Perfect Place in City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#fff"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/colorEnd"
+                android:textSize="24sp"
+                android:text="Sign In"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmailLayoutSignIn"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_white"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/nunito_reguler"
+                    android:hint="Email Anda"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/etEmailSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPassLayoutSignIn"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_white"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:fontFamily="@font/nunito_reguler"
+                    android:hint="Password Anda"
+                    android:textSize="18sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:id="@+id/etPassSignIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/signin_click"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/gradien"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:text="Sign In"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_margin="6dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_reguler"
+                android:textSize="16sp"
+                android:text="OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/goto_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Create An Account"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:visibility="gone"
+            android:layout_margin="16dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/spin_kit_signin"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorEnd" />
+    </RelativeLayout>
+
+</LinearLayout>

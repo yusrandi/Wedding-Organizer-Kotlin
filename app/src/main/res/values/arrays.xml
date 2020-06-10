@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string-array name="socialNetworks">
+    <item>Twitter</item>
+    <item>Google+</item>
+    <item>Instagram</item>
+    <item>Facebook</item>
+  </string-array>
+
+  <string-array name="socialNetworks_longItems">
+    <item>Twitter is an online social networking service that enables users to send and read short 140-character messages called "tweets".</item>
+    <item>Google+ is an interest-based social network that is owned and operated by Google Inc. The service is Google\'s fourth foray into social networking.</item>
+    <item>Instagram is an online mobile photo-sharing, video-sharing and social networking service that enables its users to take pictures and videos, and share them on a variety of social networking platforms.</item>
+    <item>Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with friends.</item>
+  </string-array>
+
+  <string-array name="states">
+    <item>Biringkanaya</item>
+    <item>Bontoala</item>
+    <item>Makassar</item>
+    <item>Mamajang</item>
+    <item>Manggala</item>
+    <item>Mariso</item>
+    <item>Panakkukang</item>
+    <item>Rappocini</item>
+    <item>Tallo</item>
+    <item>Tamalanrea</item>
+    <item>Tamalate</item>
+    <item>UjungPandang</item>
+    <item>Ujung Tanah</item>
+    <item>Wajo</item>
+  </string-array>
+
+</resources>
